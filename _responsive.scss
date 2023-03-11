@@ -1,0 +1,46 @@
+@media(min-width: 360px){
+   .navbar{
+    padding: 0px 63px 0 0px;
+   }
+   .hero-img{
+    .hero-text{
+        h1{
+            font-size: 43px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+   }
+   .aboutus{
+    .image{
+        background-image: url('../img/brown_hair_small.jpg');
+    }
+}
+    .offert{
+        background-image: url('../img/lavender_small.jpg');
+
+}
+}
+
+
+@media(min-width:1200px){
+
+    .team{
+        .team-carusele{
+            .card{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media(min-width:1300px){
+    .team{
+        .team-carusele{
+            .card{
+                margin-right: 27px;
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+    @import './colors';
+
+    nav{
+        z-index: 5;
+        .navbar-brand{
+            font-size: 28px;
+
+            i{
+                color: $colored;
+            }
+        }
+        .nav-link{
+            font-size: 19px;
+        }
+        .nav-link:hover{
+            color: $colored;
+        }
+    }
+    .hero-img{
+        
+        height: 100vh;
+        position: relative;
+        z-index: 0;
+
+        i{
+            color: $colored;
+            font-size: 55px;
+            padding-bottom: 12px;
+        }
+        .btn{
+            color: $basic;
+            border: 2px solid $basic;
+            padding: 5px;
+        }
+        .btn:hover{
+            background-color: $colored;
+            color: $light;
+        }
+        .fa-chevron-down{
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            bottom: 100px;
+            font-size: 45px;
+        }
+        .hero-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            h1{
+                font-size: 50px;
+                letter-spacing: 3px;
+            }
+            p{
+                color: $colored;
+                font-size: 22px;
+                margin-top: 10px;
+            }
+        }
+    }
+.aboutus{
+    .image{background-image: url('../img/brown_hair_big.jpg');
+        height: 350px;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 0;
+        
+        
+        
+        .image-shadow{
+            position: absolute;
+            background-color: rgba(239, 238, 238, 0.611);
+            height: 100%;
+            width: 100%;
+            z-index: -5;
+        }
+        .image-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            z-index: 10;
+            height: 100%;
+            color: $basic;
+            font-size: 28px;
+            letter-spacing: 3px;
+            font-weight: 300;
+        }
+    }
+}
+.aboutus-section{
+    .aboutus-item{
+        text-align: center;
+        margin-bottom: 20px;
+        transition: color .3s;
+        transition: transform .6s;
+    
+
+        i{
+            font-size: 30px;
+        }
+        p{
+            font-size: 19px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-top: 13px;
+        }
+    }
+    .aboutus-item:hover{
+        color: $colored;
+        transform: scale(1.09);
+    }
+}.offert{
+    position: relative;
+    background-image: url('../img/lavender_big.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    .offert-item{
+        border: 3px solid $colored;
+        border-radius: 20px;
+        width: 310px;
+        margin-top: 10px;
+        padding: 30px 15px;
+        background-color: $light-bs;
+        
+        .info-box{
+            width: 230px;
+            text-align: left;
+            margin: 0px auto;
+        }
+        .fa-star{
+            padding: 0px 6px;
+        }
+        .special{
+            font-weight: bold;
+            color: $darker;
+        }
+        .price{
+            font-size: 38px;
+            font-weight: bold;
+            color: $darker;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .info{
+            .fa-check{
+                color: $check;
+                font-size: 22px;
+            }
+            .fa-xmark{
+                color: $warning;
+                font-size: 24px;
+            }
+        }
+        .offert-btn{
+            margin: 0px auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: $colored;
+            border: 3px solid $colored;
+            padding: 5px 45px;
+            border-radius: 12px;
+            font-size: 18px;
+            color: $light;
+            transition: all .3s;
+            margin-top: 50px;
+        }
+        .offert-btn:hover{
+            background-color: $light-bs;
+            color: $colored;
+        }
+    }
+    .offert-shadow{
+        position: absolute;
+        content: '';
+        background-color: rgba(239, 238, 238, 0.611);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -10;
+    }
+    
+}
+.team{
+    .team-carusele{
+        .col{
+            .card{
+                img{
+                    object-fit: cover;
+                    height: 150px;
+                    object-position: top;
+                }
+                .card-body{
+                   height: 160px;
+                    .card-title{
+                        color: $colored;
+                        font-weight: bold;
+                    }
+                }
+                .card-footer{
+                    .text-muted{
+                        display: flex;
+                        justify-content:space-evenly;
+                        align-items: center;
+                    a{
+                        i{
+                            font-size: 20px;
+                           
+                        }
+                    }}
+                }
+            }
+        }
+    }
+}
+.contact{
+    .wrap{
+        display: flex;
+        justify-content:space-evenly;
+        
+        .adress-title{
+            margin-bottom: 20px;
+            color: $colored;
+            font-size: 22px;
+        }
+        .adress{
+            p{
+                margin: 7px;
+                text-align: center;
+            }
+        }
+        .social{
+            .icons{
+                display: flex;
+                justify-content: space-evenly;
+                i{
+                    font-size: 27px;
+                   
+                }
+            }
+        }
+    }
+}

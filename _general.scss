@@ -1,0 +1,39 @@
+@import './colors';
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 30px;
+    border: 3px solid $colored;
+    border-radius: 22px;
+    background-color: rgb(241, 241, 241);
+}
+.underline{
+    height: 4px;
+    width: 150px;
+    background-color: $colored;
+    margin: 10px auto 40px;
+    
+}
+h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+h3{
+    font-size: 22px;
+    padding-top: 5px;
+   color: $colored;
+   text-align: center;
+    
+}
+.shadow-bg{
+    background-color: rgba(255, 255, 255, 0.314);
+    padding: 50px 20px;
+}

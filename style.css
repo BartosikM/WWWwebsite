@@ -1,0 +1,294 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 30px 30px;
+  border: 3px solid rgb(159, 170, 255);
+  border-radius: 22px;
+  background-color: rgb(241, 241, 241);
+}
+
+.underline {
+  height: 4px;
+  width: 150px;
+  background-color: rgb(159, 170, 255);
+  margin: 10px auto 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 22px;
+  padding-top: 5px;
+  color: rgb(159, 170, 255);
+  text-align: center;
+}
+
+.shadow-bg {
+  background-color: rgba(255, 255, 255, 0.314);
+  padding: 50px 20px;
+}
+
+nav {
+  z-index: 5;
+}
+nav .navbar-brand {
+  font-size: 28px;
+}
+nav .navbar-brand i {
+  color: rgb(159, 170, 255);
+}
+nav .nav-link {
+  font-size: 19px;
+}
+nav .nav-link:hover {
+  color: rgb(159, 170, 255);
+}
+
+.hero-img {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+.hero-img i {
+  color: rgb(159, 170, 255);
+  font-size: 55px;
+  padding-bottom: 12px;
+}
+.hero-img .btn {
+  color: black;
+  border: 2px solid black;
+  padding: 5px;
+}
+.hero-img .btn:hover {
+  background-color: rgb(159, 170, 255);
+  color: white;
+}
+.hero-img .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  font-size: 45px;
+}
+.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.hero-img .hero-text h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.hero-img .hero-text p {
+  color: rgb(159, 170, 255);
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.aboutus .image {
+  background-image: url("../img/brown_hair_big.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+.aboutus .image .image-shadow {
+  position: absolute;
+  background-color: rgba(239, 238, 238, 0.611);
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+.aboutus .image .image-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  z-index: 10;
+  height: 100%;
+  color: black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.aboutus-section .aboutus-item {
+  text-align: center;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+  transition: transform 0.6s;
+}
+.aboutus-section .aboutus-item i {
+  font-size: 30px;
+}
+.aboutus-section .aboutus-item p {
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 13px;
+}
+.aboutus-section .aboutus-item:hover {
+  color: rgb(159, 170, 255);
+  transform: scale(1.09);
+}
+
+.offert {
+  position: relative;
+  background-image: url("../img/lavender_big.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.offert .offert-item {
+  border: 3px solid rgb(159, 170, 255);
+  border-radius: 20px;
+  width: 310px;
+  margin-top: 10px;
+  padding: 30px 15px;
+  background-color: rgb(240, 240, 240);
+}
+.offert .offert-item .info-box {
+  width: 230px;
+  text-align: left;
+  margin: 0px auto;
+}
+.offert .offert-item .fa-star {
+  padding: 0px 6px;
+}
+.offert .offert-item .special {
+  font-weight: bold;
+  color: rgb(120, 132, 227);
+}
+.offert .offert-item .price {
+  font-size: 38px;
+  font-weight: bold;
+  color: rgb(120, 132, 227);
+  padding-bottom: 10px;
+  text-align: center;
+}
+.offert .offert-item .info .fa-check {
+  color: rgb(12, 186, 12);
+  font-size: 22px;
+}
+.offert .offert-item .info .fa-xmark {
+  color: rgb(223, 34, 34);
+  font-size: 24px;
+}
+.offert .offert-item .offert-btn {
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(159, 170, 255);
+  border: 3px solid rgb(159, 170, 255);
+  padding: 5px 45px;
+  border-radius: 12px;
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s;
+  margin-top: 50px;
+}
+.offert .offert-item .offert-btn:hover {
+  background-color: rgb(240, 240, 240);
+  color: rgb(159, 170, 255);
+}
+.offert .offert-shadow {
+  position: absolute;
+  content: "";
+  background-color: rgba(239, 238, 238, 0.611);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+
+.team .team-carusele .col .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  -o-object-position: top;
+     object-position: top;
+}
+.team .team-carusele .col .card .card-body {
+  height: 160px;
+}
+.team .team-carusele .col .card .card-body .card-title {
+  color: rgb(159, 170, 255);
+  font-weight: bold;
+}
+.team .team-carusele .col .card .card-footer .text-muted {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.team .team-carusele .col .card .card-footer .text-muted a i {
+  font-size: 20px;
+}
+
+.contact .wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact .wrap .adress-title {
+  margin-bottom: 20px;
+  color: rgb(159, 170, 255);
+  font-size: 22px;
+}
+.contact .wrap .adress p {
+  margin: 7px;
+  text-align: center;
+}
+.contact .wrap .social .icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact .wrap .social .icons i {
+  font-size: 27px;
+}
+
+@media (min-width: 360px) {
+  .navbar {
+    padding: 0px 63px 0 0px;
+  }
+  .hero-img .hero-text h1 {
+    font-size: 43px;
+    text-align: center;
+  }
+  .hero-img .hero-text p {
+    text-align: center;
+  }
+  .aboutus .image {
+    background-image: url("../img/brown_hair_small.jpg");
+  }
+  .offert {
+    background-image: url("../img/lavender_small.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .team .team-carusele .card {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1300px) {
+  .team .team-carusele .card {
+    margin-right: 27px;
+  }
+}/*# sourceMappingURL=style.css.map */
